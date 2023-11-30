@@ -27,7 +27,6 @@ public class PostService {
         getPostById(postId).ifPresent(post -> {
             post.setTitle(updatedPost.getTitle());
             post.setContent(updatedPost.getContent());
-            // You may want to update other fields as well
         });
     }
 
