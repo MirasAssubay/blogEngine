@@ -20,10 +20,21 @@ public class Post {
         this.author = author;
     }
 
+//    public Post(String title, String content, User author) {
+//        this.id = idCounter++;
+//        this.title = title;
+//        this.content = content;
+//        this.author = author;
+//    }
+
+
+    public void setId(long id){
+        this.id = id;
+    }
+
     public Long getId() {
         return id;
     }
-
 
     public String getTitle() {
         return title;
