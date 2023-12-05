@@ -1,5 +1,11 @@
 package com.example.blogengine.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+
+@Data
+@AllArgsConstructor
 public class Comment {
     private static Long idCounter = 1L;
 
@@ -15,32 +21,4 @@ public class Comment {
         this.post = post;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Post getPost() {
-        return post;
-    }
-
-    public void setPost(Post post) {
-        this.post = post;
-    }
 }
